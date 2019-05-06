@@ -1,50 +1,33 @@
-: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'ContosoPetsContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ContosoPets 
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 0 entities to in-memory store.
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Update[30100]
+      Saved 2 entities to in-memory store.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
       User profile is available. Using '/home/nygilgp/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[58]
-      Creating key {e606026e-1abc-4011-a169-d6835443b16d} with creation date 2019-05-06 05:48:38Z, activation date 2019-05-06 05:48:38Z, and expiration date 2019-08-04 05:48:38Z.
-[40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
-      No XML encryptor configured. Key {e606026e-1abc-4011-a169-d6835443b16d} may be persisted to storage in unencrypted form.
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[39]
-      Writing data to file '/home/nygilgp/.aspnet/DataProtection-Keys/key-e606026e-1abc-4011-a169-d6835443b16d.xml'.
 Hosting environment: Development
 Content root path: /home/nygilgp/contoso-pets/src/ContosoPets.Api
 Now listening on: https://localhost:5001
 Now listening on: http://localhost:5000
 Application started. Press Ctrl+C to shut down.
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
-      Request starting HTTP/1.1 GET https://localhost:5001/api/values  
+      Request starting HTTP/1.1 GET https://localhost:5001/api/products  
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api)'
+      Executing endpoint 'ContosoPets.Api.Controllers.ProductsController.GetAll (ContosoPets.Api)'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
-      Route matched with {action = "Get", controller = "Values"}. Executing action ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api)
+      Route matched with {action = "GetAll", controller = "Products"}. Executing action ContosoPets.Api.Controllers.ProductsController.GetAll (ContosoPets.Api)
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
-      Executing action method ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api) - Validation state: Valid
+      Executing action method ContosoPets.Api.Controllers.ProductsController.GetAll (ContosoPets.Api) - Validation state: Valid
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 2.2.4-servicing-10062 initialized 'ContosoPetsContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ContosoPets 
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
-      Executed action method ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.1958ms.
+      Executed action method ContosoPets.Api.Controllers.ProductsController.GetAll (ContosoPets.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 38.1452ms.
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
-      Executing ObjectResult, writing value of type 'System.String[]'.
+      Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ContosoPets.Api.Models.Product, ContosoPets.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
-      Executed action ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api) in 196.0593ms
+      Executed action ContosoPets.Api.Controllers.ProductsController.GetAll (ContosoPets.Api) in 116.4074ms
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api)'
+      Executed endpoint 'ContosoPets.Api.Controllers.ProductsController.GetAll (ContosoPets.Api)'
 [40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
-      Request finished in 255.6062ms 200 application/json; charset=utf-8
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
-      Request starting HTTP/1.1 GET https://localhost:5001/api/values/5  
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint 'ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api)'
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
-      Route matched with {action = "Get", controller = "Values"}. Executing action ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api)
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
-      Executing action method ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api) with arguments (5) - Validation state: Valid
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
-      Executed action method ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.1727ms.
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
-      Executing ObjectResult, writing value of type 'System.String'.
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
-      Executed action ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api) in 14.4281ms
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint 'ContosoPets.Api.Controllers.ValuesController.Get (ContosoPets.Api)'
-[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
-      Request finished in 28.6739ms 200 text/plain; charset=utf-8
-Application is shutting down...
+      Request finished in 188.9117ms 200 application/json; charset=utf-8
